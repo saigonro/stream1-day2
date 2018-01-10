@@ -1,0 +1,66 @@
+            #container {
+				margin-right:auto; /*center container with margins left & right set to auto*/
+				margin-left:auto;
+				width:960px;	/*to center an element it must have a fixed width*/
+				border-radius: 10px;
+				font-size: 0; /* font-size:0 removes problem spaceing issue for inline-block*/
+				padding-top: 120px;
+				position: relative;
+			}
+			
+			.box {
+				display: block;
+				position: relative;
+				width: 100%;
+				background-color: rgba(129, 187, 201, 0.5);
+				/*margin:10px;*/ /*pushing our element out of bounds*/
+				border-radius: 10px;
+				font-family: Roboto;
+				font-size: 20px;  /* important to declare font-size here, otherwise will be 0*/
+				text-align: center;
+			}
+			
+			.sidebar {
+				display: inline-block;
+				position: relative;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				-ms-box-sizing: border-box;
+				width: 470px;
+				height: 320px;
+				box-sizing: border-box;
+				margin-right: 10px;
+				margin-bottom: 20px;
+				padding: 20px;
+			}
+			
+			.content {
+				display: inline-block;
+				position: relative;
+				/*height: 320px;*/
+				width: 470px;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				-ms-box-sizing: border-box;
+				box-sizing: border-box;
+				margin-left: 10px;
+				padding: 20px;
+			}
+			
+			p {
+				margin-bottom: 50px;
+			}
+			
+			#LinkToTop {
+				position: absolute;
+				bottom: 0;
+				left: -80px;
+			}
+			
+			#header {
+				position: fixed;
+				border: 1px solid black;
+				top: 0;
+				left: 0;
+				z-index: 200;
+			}
